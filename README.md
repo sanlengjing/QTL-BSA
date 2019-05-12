@@ -7,7 +7,7 @@ About installation
 If you need to anlysis from the step of the sequence alignment and snp calling, please make sure your linux operating system have installed the following software: bwa,samtools, Coval,R and Perl module(Bio::seq module). Otherwise, make sure you have installed R.
 Note: you should modify the path to your software in the QTLv1.0.pl
 
-About parameter
+About parameter：
 -h      get help;
 -f      Reference sequence, fasta file
 -C      CPU number, default:    2       
@@ -51,13 +51,17 @@ Variant: the variant.
 Variant_Support: number of the reads that support the variant in the position.
 ReadsCoverage: number of the reads that coveraged in the position.
 Variant_frequency: the frequency of the variant(the Variant_Support/ReadsCoverage);
-Use the command: perl GetQTLv1.pl -f /path_to_ReferSeq/ref.fa -fv VariantFile1.txt -sv VariantFile2.txt -D 30 -freq 0.03 -m 0.3 -n 7 -fp H -sp L
+Use the command: 
+perl GetQTLv1.pl -f /path_to_ReferSeq/ref.fa -fv VariantFile1.txt -sv VariantFile2.txt -D 30 -freq 0.03 -m 0.3 -n 7 -fp H -sp L
 
 It also can analysis for single bulked genome sequencing data or from single SNP variant information.
-for the former,use the command: perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -c 4 -FL H_1.fq -FR H_2.fq -D 30 -freq 0.03 -m 0.3 -n 7 -fp H 
-                                perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -c 4 -SL L_1.fq -SR L_2.fq -D 30 -freq 0.03 -m 0.3 -n 7 -sp L
-for the latter,use the command: perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -fv VariantFile1.txt -freq 0.03 -m 0.3 -n 7 -fp H 
-                                perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -sv VariantFile2.txt -freq 0.03 -m 0.3 -n 7 -sp L
+for the former,use the command:
+perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -c 4 -FL H_1.fq -FR H_2.fq -D 30 -freq 0.03 -m 0.3 -n 7 -fp H 
+perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -c 4 -SL L_1.fq -SR L_2.fq -D 30 -freq 0.03 -m 0.3 -n 7 -sp L
+
+for the latter,use the command: 
+perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -fv VariantFile1.txt -freq 0.03 -m 0.3 -n 7 -fp H 
+perl QTLv1.0.pl -f /path_to_ReferSeq/ref.fa -sv VariantFile2.txt -freq 0.03 -m 0.3 -n 7 -sp L
 Note: the parameter -fp or -sp must be assigned according to your input data.
 
 
