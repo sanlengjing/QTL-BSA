@@ -5,6 +5,7 @@ QTLv1.0.pl, an anlysis pipeline for Bulked Sequence Analysis based on highthroug
 
 About installation
 If you need to anlysis from the step of the sequence alignment and snp calling, please make sure your linux operating system have installed the following software: bwa,samtools, Coval,R and Perl module(Bio::seq module). Otherwise, make sure you have installed R.
+
 Note: you should modify the path to your software in the QTLv1.0.pl
 
 
