@@ -8,6 +8,7 @@ If you need to anlysis from the step of the sequence alignment and snp calling, 
 Note: you should modify the path to your software in the QTLv1.0.pl
 
 About parameter：
+
 -h      get help;
 -f      Reference sequence, fasta file
 -C      CPU number, default:    2       
